@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>Weather</title>
+</head>
+<body>
+    
+
+    <div id="container">
+        <header id="search">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button id="icon">
+                <i class="ri-search-line"></i>
+            </button>
+        </header>
+
+        <div id="initial" style="display: none;">
+        
+            <div id="mid">
+                <div id="location">
+                    <i id="icon-one" class="ri-map-pin-line"></i>
+                    <h3 id="place">
+                        Kathmandu
+                    </h3>
+                </div>
+
+                <div id="date">
+                    Sept 1, Sat
+                </div>
+
+            </div>
+
+            <div id="Weather">
+                <img id="clouds" src="atmosphere.svg" alt="">
+                <div id="info">
+                    <h1 id="temp">
+                        20&degC
+                    </h1>
+                    <h3 id="condition">Cloudy</h3>
+                </div>
+
+            </div>
+
+            <div id="humwin">
+                <div id="humidity">
+                    <i id="win"   class="ri-contrast-drop-2-line"></i>
+                    <h3>Humidity</h3>
+                    <h3 id="humid">55%</h3>
+                </div>
+
+                <div id="windspeed">
+                    <i id="win" class="ri-windy-line"></i>
+                    <h3>Wind speed</h3>
+                    <h3 id="wind">5M/s</h3>
+                </div>    
+            </div>
+
+            <footer>
+                <div class="end">
+                    <h3>14 Sept</h3>
+                    <div id="forecast">
+                        <img src="drizzle.svg" alt="">
+                        <h3>29&degC</h3>
+                    </div>
+                </div>
+
+                <div class="end">
+                    <h3>14 Sept</h3>
+                    <div id="forecast">
+                        <img src="drizzle.svg" alt="">
+                        <h3>29&degC</h3>
+                    </div>
+                </div>
+
+                <div class="end">
+                    <h3>14 Sept</h3>
+                    <div id="forecast">
+                        <img src="drizzle.svg" alt="">
+                        <h3>29&degC</h3>
+                    </div>
+                </div>
+
+                <div class="end">
+                    <h3>14 Sept</h3>
+                    <div id="forecast">
+                        <img src="drizzle.svg" alt="">
+                        <h3>29&degC</h3>
+                    </div>
+                </div>
+
+
+            </footer>
+
+        </div>
+
+        <div id="loader-info">
+            <img src="search-city.png" alt="">
+            <h3>Find out weather condition of your city</h3>
+
+        </div>
+
+        <div id="loader-error-info">
+            <img src="not-found.png" alt="">
+            <h3>Invalid city name</h3>
+        </div> 
+        
+    </div>
+
+
+    </div>
+
+
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
